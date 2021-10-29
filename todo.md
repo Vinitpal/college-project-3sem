@@ -13,5 +13,6 @@ Services
 -- Footer
 
 // AboutPage
+// services + gym + facilities + events + ground for games + canteen + ecell etc
 
 // EventsGallery Page
