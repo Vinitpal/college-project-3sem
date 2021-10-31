@@ -1,4 +1,5 @@
 import AboutUs from "./AboutUs";
+import Overview from "./Overview";
 import Services from "./Services";
 
 const index = () => {
@@ -6,6 +7,7 @@ const index = () => {
     <>
       <AboutUs />
       <Services />
+      <Overview />
     </>
   );
 };

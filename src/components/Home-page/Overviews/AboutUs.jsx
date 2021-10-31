@@ -1,7 +1,15 @@
 // overview of college's vision and ethic
+
+import WaveSvg from "/Images/wave-haikei-2.svg";
+
 const AboutUs = () => {
   return (
-    <div className="w-full h-screen bg-main flex items-center justify-around">
+    <div
+      style={{
+        background: `url(${WaveSvg}) no-repeat bottom/cover`,
+      }}
+      className="w-full h-screen bg-main flex items-center justify-around"
+    >
       <div className="w-1/3">
         {/* Carousel */}
         <h1 className="my-2 text-3xl font-semibold">Lorem Ipsum Dolor</h1>
