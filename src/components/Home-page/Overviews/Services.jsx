@@ -1,7 +1,5 @@
 import ServicesCard from "./ServicesCard";
 
-// import BlurrySvg from "/Images/blurry-gradient-haikei.svg";
-
 const ServicesInfo = [
   {
     title: "Choose your career",
@@ -24,10 +22,7 @@ const ServicesInfo = [
 
 const Services = () => {
   return (
-    <div
-      // style={{ background: `url(${BlurrySvg}) no-repeat center center/cover` }}
-      className="w-full h-screen bg-background flex items-center justify-around"
-    >
+    <div className="w-full h-screen bg-background flex items-center justify-around">
       {/* Choose your career */}
       {ServicesInfo.map((item, index) => (
         <ServicesCard key={index} title={item.title} options={item.options} />

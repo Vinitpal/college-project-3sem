@@ -19,6 +19,9 @@ module.exports = {
         secondary: "#f25f4c",
         tertiary: "#e53170",
       },
+      zIndex: {
+        "-1": "-1",
+      },
     },
   },
   variants: {},
