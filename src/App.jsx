@@ -5,6 +5,7 @@ import Overview from "./components/Home-page/Overviews";
 import Testimonial from "./components/Home-page/Testimonial";
 import Placement from "./components/Home-page/Placement";
 import ApplyNowCTA from "./components/Home-page/ApplyNowCTA";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Testimonial />
       <Placement />
       <ApplyNowCTA />
+      <Footer />
     </div>
   );
 };

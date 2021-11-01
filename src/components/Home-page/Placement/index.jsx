@@ -1,6 +1,6 @@
 const index = () => {
   return (
-    <div className="h-screen flex justify-evenly items-center bg-gray-200">
+    <div className="h-screen flex justify-evenly items-center bg-gray-100">
       <div className="w-5/12 flex flex-col items-center">
         <h1 className="text-5xl font-semibold my-10">Our Top Recruiters</h1>
         <div className="flex flex-wrap justify-center text-center mb-4 ">

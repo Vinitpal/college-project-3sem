@@ -16,8 +16,8 @@ module.exports = {
         subHeadLine: "#2e2f3e",
         paragraph: "#a7a9be",
         highlight: "#ff8906",
-        secondary: "#f25f4c",
-        tertiary: "#e53170",
+        secondary: "#f3d2c1",
+        tertiary: "#001858",
       },
       zIndex: {
         "-1": "-1",

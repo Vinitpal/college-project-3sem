@@ -1,6 +1,6 @@
 // overview of college's vision and ethic
 
-import WaveSvg from "/Images/wave-haikei-2.svg";
+import WaveSvg from "/Images/wave-haikei-4.svg";
 
 const AboutUs = () => {
   return (

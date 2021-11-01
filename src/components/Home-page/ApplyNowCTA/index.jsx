@@ -12,7 +12,7 @@ const index = () => {
           Shri Shankracharya Technical Campus
         </h1>
         <div>
-          <button className="mt-10 mx-4 py-2.5 px-8 border-2 transition duration-300 text-xl border-blue-600 outline-none hover:bg-blue-600 hover:text-main rounded-xl shadow-md ">
+          <button className="mt-10 mx-4 py-2.5 px-8 transition duration-300 text-xl outline-none bg-blue-600 hover:bg-blue-700 text-main rounded-xl shadow-md ">
             Enroll Now
           </button>
           <button className="mt-10 mx-4 py-2.5 px-8 text-xl border-2 border-pink-600 bg-pink-600 hover:bg-pink-700 hover:border-pink-700 outline-none text-main rounded-xl shadow-md ">

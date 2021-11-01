@@ -22,7 +22,7 @@ const ServicesInfo = [
 
 const Services = () => {
   return (
-    <div className="w-full h-screen bg-background flex items-center justify-around">
+    <div className="w-full h-screen bg-secondary flex items-center justify-around">
       {/* Choose your career */}
       {ServicesInfo.map((item, index) => (
         <ServicesCard key={index} title={item.title} options={item.options} />

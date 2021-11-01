@@ -9,7 +9,7 @@ const index = () => {
         <p className="text-gray-600">
           Over 10,000+ students graduate every year from our college
         </p>
-        <button className="shadow-sm bg-blue-500 hover:bg-blue-600 transition transform active:scale-95 rounded-md outline-none text-main my-3 px-3 py-1">
+        <button className="shadow-md bg-blue-500 hover:bg-blue-600 transition transform active:scale-95 rounded-md outline-none text-main my-3 px-3 py-1">
           Read success stories
         </button>
       </div>
