@@ -21,7 +21,7 @@ const index = () => {
 
   return (
     <div className="py-6 lg:py-0 h-full lg:h-screen flex flex-col lg:flex-row justify-evenly items-center bg-gray-100">
-      <div className="w-10/12 lg:w-6/12 flex flex-col items-center">
+      <div className="w-10/12 lg:w-6/12 flex flex-col items-center text-center lg:text-left">
         <h1 className="text-4xl lg:text-5xl font-semibold my-10">
           Our Top Recruiters
         </h1>
