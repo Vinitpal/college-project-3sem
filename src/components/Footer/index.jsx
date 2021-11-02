@@ -63,7 +63,10 @@ const Footer = () => {
       <div className="w-full h-full flex items-center justify-evenly">
         <div>
           {LinksArr1.map((data, idx) => (
-            <p className="text-xl leading-10 cursor-pointer hover:text-highlight">
+            <p
+              key={idx}
+              className="text-xl leading-10 cursor-pointer hover:text-highlight"
+            >
               {data.title}
             </p>
           ))}
@@ -71,7 +74,10 @@ const Footer = () => {
 
         <div>
           {LinksArr2.map((data, idx) => (
-            <p className="text-xl leading-10 cursor-pointer hover:text-highlight">
+            <p
+              key={idx}
+              className="text-xl leading-10 cursor-pointer hover:text-highlight"
+            >
               {data.title}
             </p>
           ))}
@@ -79,7 +85,10 @@ const Footer = () => {
 
         <div>
           {socialLinksArr.map((data, idx) => (
-            <p className="text-xl leading-10 flex items-center cursor-pointer hover:text-highlight">
+            <p
+              key={idx}
+              className="text-xl leading-10 flex items-center cursor-pointer hover:text-highlight"
+            >
               {data.icon}
               {data.title}
             </p>

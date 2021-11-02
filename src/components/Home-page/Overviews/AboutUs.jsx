@@ -8,9 +8,9 @@ const AboutUs = () => {
       style={{
         background: `url(${WaveSvg}) no-repeat bottom/cover`,
       }}
-      className="w-full h-screen bg-main flex items-center justify-around"
+      className="w-full h-screen bg-main flex flex-col lg:flex-row items-center justify-around"
     >
-      <div className="w-1/3">
+      <div className="w-11/12 lg:w-1/3">
         {/* Carousel */}
         <h1 className="my-2 text-3xl font-semibold">Lorem Ipsum Dolor</h1>
         <p className="text-xl text-subHeadLine">
@@ -20,7 +20,7 @@ const AboutUs = () => {
           omnis fuga quae, commodi at.
         </p>
       </div>
-      <div className="w-1/3">
+      <div className="w-8/12 lg:w-1/3">
         {/* INFO */}
         <img
           src="https://sstc.ac.in/assets/home/autonomous.jpg"
