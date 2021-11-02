@@ -3,9 +3,11 @@ import TestimonyCard from "./TestimonyCard";
 // card + carousel
 const index = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-around">
-      <div className="text-center leading-loose">
-        <h1 className="text-5xl font-semibold">Hear from our students</h1>
+    <div className="py-8 lg:py-0 h-full lg:h-screen flex flex-col items-center justify-around">
+      <div className="text-center leading-loose mb-10 lg:mb-0 ">
+        <h1 className="text-4xl lg:text-5xl font-semibold">
+          Hear from our students
+        </h1>
         <p className="text-gray-600">
           Over 10,000+ students graduate every year from our college
         </p>
@@ -13,7 +15,7 @@ const index = () => {
           Read success stories
         </button>
       </div>
-      <div className="flex justify-around text-center">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-around text-center">
         {[...Array(3)].map((_, idx) => (
           <TestimonyCard key={idx} />
         ))}

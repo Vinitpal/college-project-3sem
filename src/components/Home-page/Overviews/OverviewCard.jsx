@@ -2,7 +2,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const OverviewCard = () => {
   return (
-    <div className="group overflow-hidden cursor-pointer w-3/12">
+    <div className="group overflow-hidden cursor-pointer w-10/12 lg:w-3/12 my-10 lg:my-0">
       <img
         className="transform transition-all duration-300 group-hover:scale-105"
         src="https://www.beaconhills.vic.edu.au/app/uploads/2021/03/7JG1498-scaled.jpg"
@@ -19,10 +19,11 @@ const OverviewCard = () => {
         </p>
       </div>
       <button className="w-full text-xl py-2 flex items-center relative group-hover:!text-main text-blue-900 font-semibold z-20">
-        <div className="w-full h-full transform absolute -translate-x-full group-hover:translate-x-0 bg-blue-900 transition-all duration-500 -z-1"></div>
+        <div className="w-full h-full transform absolute -translate-x-full group-hover:translate-x-0 bg-main group-hover:bg-blue-900 transition-all duration-500 -z-1"></div>
         <div
           style={{ height: "2px" }}
-          className="transition-all duration-500 w-5 group-hover:w-24 bg-blue-900 group-hover:bg-main z-10"
+          className="transition-all duration-500 w-5 
+          group-hover:w-32 lg:group-hover:w-24 bg-blue-900 group-hover:bg-main z-10"
         ></div>
         <IoIosArrowForward className="-ml-3 z-10" />
         Find out more

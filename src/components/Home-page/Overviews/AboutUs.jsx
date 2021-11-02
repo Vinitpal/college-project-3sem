@@ -6,11 +6,11 @@ const AboutUs = () => {
   return (
     <div
       style={{
-        background: `url(${WaveSvg}) no-repeat bottom/cover`,
+        background: `url(${WaveSvg}) no-repeat bottom center/cover`,
       }}
-      className="w-full h-screen bg-main flex flex-col lg:flex-row items-center justify-around"
+      className="py-12 w-full lg:py-0 lg:h-screen bg-main flex flex-col lg:flex-row items-center justify-around"
     >
-      <div className="w-11/12 lg:w-1/3">
+      <div className=" w-11/12 lg:w-1/3">
         {/* Carousel */}
         <h1 className="my-2 text-3xl font-semibold">Lorem Ipsum Dolor</h1>
         <p className="text-xl text-subHeadLine">
@@ -20,7 +20,7 @@ const AboutUs = () => {
           omnis fuga quae, commodi at.
         </p>
       </div>
-      <div className="w-8/12 lg:w-1/3">
+      <div className="my-12 w-10/12 lg:my-0 lg:w-1/3">
         {/* INFO */}
         <img
           src="https://sstc.ac.in/assets/home/autonomous.jpg"
