@@ -28,7 +28,11 @@ const LinkDesign = ({ showNavbar }) => {
 
 const NavLinks = ({ title, showNavbar }) => {
   return (
-    <div className="mx-4 relative w-24 flex justify-center group overflow-hidden">
+    <div
+      className={`mx-4 relative w-24 flex justify-center group overflow-hidden ${
+        showNavbar ? "my-2" : "my-0"
+      }`}
+    >
       <a className="text-lg hover:text-highlight " href="#">
         {title}
       </a>
@@ -69,7 +73,7 @@ const index = () => {
 
       {/* Hamburger Navbar for mobile and tab */}
       {showNavbar ? (
-        <div className="h-12 transition-all duration-500 w-full bg-tertiary text-main flex justify-center">
+        <div className="h-full transition-all duration-500 py-1 w-full bg-tertiary text-main flex flex-col items-center ">
           {navbarArr.map((item, id) => (
             <NavLinks title={item.title} showNavbar={showNavbar} key={id} />
           ))}

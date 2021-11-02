@@ -23,7 +23,7 @@ const OverviewCard = () => {
         <div
           style={{ height: "2px" }}
           className="transition-all duration-500 w-5 
-          group-hover:w-32 lg:group-hover:w-24 bg-blue-900 group-hover:bg-main z-10"
+          group-hover:w-28 lg:group-hover:w-24 bg-blue-900 group-hover:bg-main z-10"
         ></div>
         <IoIosArrowForward className="-ml-3 z-10" />
         Find out more

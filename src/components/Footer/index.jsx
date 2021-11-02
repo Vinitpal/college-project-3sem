@@ -60,12 +60,12 @@ const socialLinksArr = [
 const Footer = () => {
   return (
     <div className="h-full lg:h-96 pt-8 lg:pt-0 text-main bg-background flex flex-col items-center justify-between">
-      <div className="w-full h-full flex flex-wrap lg:flex-nowrap items-center justify-evenly">
+      <div className="w-full h-full flex flex-wrap lg:flex-nowrap text-center lg:text-left lg:items-center justify-center lg:justify-evenly">
         <div className="w-5/12 lg:w-auto m-4 lg:m-0">
           {LinksArr1.map((data, idx) => (
             <p
               key={idx}
-              className="px-4 lg:px-0 text-lg lg:text-xl !leading-10 cursor-pointer hover:text-highlight"
+              className="text-lg lg:text-xl !leading-10 cursor-pointer hover:text-highlight"
             >
               {data.title}
             </p>
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         {/* Address */}
-        <p className="w-5/12 lg:w-auto m-4 text-lg leading-loose">
+        <p className="w-6/12 lg:w-auto m-4 text-lg leading-loose">
           Shri Shankracharya Technical Campus,
           <br />
           Junwani, Bhilai, C.G.

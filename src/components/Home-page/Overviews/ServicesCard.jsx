@@ -3,7 +3,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 
 const ServicesOptions = ({ option }) => {
   return (
-    <div className="flex items-center  ml-10 border-b-2 pb-2 my-1 text-md hover:text-white hover:font-semibold text-main ">
+    <div className="flex items-center lg:ml-10 border-b-2 pb-2 my-1 text-md hover:text-white hover:font-semibold text-main ">
       <FiArrowRightCircle className="text-main text-xl lg:text-lg" />
       <a className="ml-2 " href="#xyz">
         {option}
