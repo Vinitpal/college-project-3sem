@@ -2,6 +2,7 @@
 
 import React from "react";
 import "./heroSection.css";
+import HeroImg from "../../../../assets/Images/HeroImage.jpg";
 
 const index = () => {
   return (
@@ -10,7 +11,7 @@ const index = () => {
       <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl text-gray-800 font-bold tracking-wide">
         FUTURE LEARNING
       </h1>
-      <img className="w-full h-full" src="/Images/hero-image.jpg" alt="SSTC" />
+      <img className="w-full h-full" src={HeroImg} alt="SSTC" />
     </div>
   );
 };

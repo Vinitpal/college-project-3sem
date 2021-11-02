@@ -18,7 +18,7 @@ const OverviewCard = () => {
           blanditiis unde deleniti rerum velit laborum libero provident.
         </p>
       </div>
-      <button className="w-full text-xl py-2 flex items-center relative group-hover:!text-main text-blue-900   font-semibold z-20">
+      <button className="w-full text-xl py-2 flex items-center relative group-hover:!text-main text-blue-900 font-semibold z-20">
         <div className="w-full h-full transform absolute -translate-x-full group-hover:translate-x-0 bg-blue-900 transition-all duration-500 -z-1"></div>
         <div
           style={{ height: "2px" }}
