@@ -12,12 +12,16 @@ const AboutUs = () => {
     >
       <div className=" w-11/12 lg:w-1/3">
         {/* todo - Carousel */}
-        <h1 className="my-2 text-3xl font-semibold">Lorem Ipsum Dolor</h1>
-        <p className="text-xl text-subHeadLine">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-          consequatur debitis at possimus adipisci quae ut quam in porro fugit.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quasi
-          omnis fuga quae, commodi at.
+        <h1 className="my-2 text-2xl lg:text-3xl font-semibold">
+          Striving for Excellence
+        </h1>
+        <p className="text-base lg:text-lg text-subHeadLine">
+          SSTC is an place where we celebrate youth and exuberance and attempt
+          to instil in students a sense of social responsibility, human values
+          and concern for environment. We not only strive to train the students
+          to become excellent scientists, technologists, thinkers and leaders of
+          the society, but also help them to mould themselves into better human
+          beings.
         </p>
       </div>
       <div className="my-12 w-10/12 lg:my-0 lg:w-1/3">

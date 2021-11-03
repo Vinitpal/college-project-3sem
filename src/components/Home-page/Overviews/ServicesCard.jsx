@@ -5,7 +5,10 @@ const ServicesOptions = ({ option }) => {
   return (
     <div className="service-item group">
       <FiArrowRightCircle className="service-item-icon" />
-      <a className="ml-2 group-hover:text-white" href="#xyz">
+      <a
+        className="ml-2 text-sm lg:text-base group-hover:text-white"
+        href="#xyz"
+      >
         {option}
       </a>
     </div>

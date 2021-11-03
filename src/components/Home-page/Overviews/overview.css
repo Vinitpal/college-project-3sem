@@ -11,11 +11,11 @@
   }
 
   .service-card {
-    @apply bg-tertiary py-8 px-10 my-10 lg:my-0 lg:h-80 rounded-md shadow-md w-10/12 lg:w-5/12;
+    @apply bg-tertiary py-8 px-6 lg:px-10 my-10 lg:my-0 lg:h-80 rounded-md shadow-md w-10/12 lg:w-5/12;
   }
 
   .service-card h3 {
-    @apply text-4xl font-medium mt-2 mb-6 text-main;
+    @apply text-xl lg:text-4xl font-medium mt-2 mb-6 text-main;
   }
 
   .service-item {
@@ -36,7 +36,7 @@
 
   .overview-img {
     height: 240px;
-    @apply w-11/12 lg:w-full rounded-sm shadow-sm transform transition-all duration-300 group-hover:scale-105;
+    @apply w-full rounded-sm shadow-sm transform transition-all duration-300 group-hover:scale-105;
   }
 
   .overview-title {
