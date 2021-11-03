@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .testimony-section {
+    @apply py-8 lg:py-0 h-full lg:h-screen flex flex-col items-center justify-around;
+  }
+
+  .testimony-wrapper {
+    @apply text-center leading-loose mb-10 lg:mb-0;
+  }
+
+  .testimony-wrapper h1 {
+    @apply my-2 lg:my-0 text-2xl lg:text-5xl font-semibold;
+  }
+
+  .testimony-cta {
+    @apply shadow-md bg-blue-500 hover:bg-blue-600 transition transform active:scale-95 rounded-md outline-none text-main my-3 px-3 py-1;
+  }
+
+  .testimony-card-container {
+    @apply flex flex-col lg:flex-row items-center lg:justify-around text-center;
+  }
+
+  .testimony-card {
+    @apply w-10/12 md:w-8/12 lg:w-3/12 px-3 lg:px-6 py-4 my-8 lg:my-0 bg-gray-200 shadow-lg rounded-md flex flex-col items-center;
+  }
+
+  .testimony-user {
+    @apply flex flex-col items-center mt-6 mb-2;
+  }
+}
+
+@tailwind utilities;

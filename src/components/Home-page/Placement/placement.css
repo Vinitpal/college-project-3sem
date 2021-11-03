@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .placement-section {
+    @apply py-6 lg:py-0 h-full lg:h-screen flex flex-col lg:flex-row justify-evenly items-center bg-gray-100;
+  }
+
+  .recruiters {
+    @apply w-10/12 lg:w-6/12 flex flex-col items-center text-center lg:text-left;
+  }
+
+  .recruiters h1 {
+    @apply text-3xl lg:text-5xl font-bold lg:font-semibold my-10;
+  }
+
+  .recruiters-img-container {
+    @apply flex flex-wrap justify-center text-center mb-4;
+  }
+
+  .recruiters-img-container img {
+    @apply my-4 mx-4 lg:mx-10 w-24 lg:w-28;
+  }
+
+  .placement-catchy-img {
+    @apply mb-10 lg:mb-10 w-10/12 lg:w-5/12;
+  }
+}
+
+@tailwind utilities;
