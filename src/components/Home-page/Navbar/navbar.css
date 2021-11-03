@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .navbar-container {
+    @apply flex flex-row justify-between items-center sticky top-0 w-full h-20 z-50 bg-tertiary;
+  }
+
+  .navbar-wrapper-pc {
+    @apply text-main hidden lg:flex w-2/6 justify-around;
+  }
+
+  .navbar-wrapper-phone {
+    @apply lg:hidden h-full transition-all duration-500 py-1 w-full bg-tertiary text-main flex flex-col items-center;
+  }
+
+  .hidden-navbar-phone {
+    @apply h-0 w-full transition-all bg-tertiary hidden;
+  }
+
+  .navbar-logo {
+    @apply mx-4 w-4/6 md:h-2/3 lg:w-1/3;
+  }
+
+  .navlinks {
+    @apply mx-4 relative w-24 flex justify-center  overflow-hidden;
+  }
+
+  .link-underline {
+    @apply w-full bottom-0 h-0.5 absolute bg-main transition-transform duration-500 transform -translate-x-full group-hover:translate-x-0;
+  }
+}
+
+@tailwind utilities;

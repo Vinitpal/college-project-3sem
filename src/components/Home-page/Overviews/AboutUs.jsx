@@ -8,10 +8,10 @@ const AboutUs = () => {
       style={{
         background: `url(${WaveSvg}) no-repeat bottom center/cover`,
       }}
-      className="py-12 w-full lg:py-0 lg:h-screen bg-main flex flex-col lg:flex-row items-center justify-around"
+      className="about-us-section"
     >
       <div className=" w-11/12 lg:w-1/3">
-        {/* Carousel */}
+        {/* todo - Carousel */}
         <h1 className="my-2 text-3xl font-semibold">Lorem Ipsum Dolor</h1>
         <p className="text-xl text-subHeadLine">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -21,7 +21,6 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="my-12 w-10/12 lg:my-0 lg:w-1/3">
-        {/* INFO */}
         <img
           src="https://sstc.ac.in/assets/home/autonomous.jpg"
           alt="autonomous"

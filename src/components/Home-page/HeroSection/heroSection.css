@@ -1,3 +1,19 @@
-.hero-section {
-  background: url("/Images/HeroImage.jpg") no-repeat center center/cover;
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .hero-section {
+    background: url("/Images/HeroImage.jpg") no-repeat bottom center/cover;
+    @apply relative w-full h-96 text-center lg:h-screen;
+  }
+
+  .bg-overlay {
+    @apply absolute inset-0 w-full h-full bg-gray-200 bg-opacity-30;
+  }
+
+  .bg-text {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl text-gray-800 font-bold tracking-wide;
+  }
 }
+
+@tailwind utilities;

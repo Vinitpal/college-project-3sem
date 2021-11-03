@@ -1,6 +1,6 @@
-// Management, Admission, Reach Us, About us, Placements
+import "./navbar.css";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
@@ -19,21 +19,15 @@ const navbarArr = [
 const LinkDesign = ({ showNavbar }) => {
   return (
     <div
-      className={`w-full h-0.5 absolute ${
-        showNavbar ? "bottom-0" : "bottom-3"
-      }  bottom-0 bg-main transition-transform duration-500 transform -translate-x-full group-hover:translate-x-0`}
+      className={`link-underline ${showNavbar ? "bottom-0" : "bottom-3"}`}
     ></div>
   );
 };
 
 const NavLinks = ({ title, showNavbar }) => {
   return (
-    <div
-      className={`mx-4 relative w-24 flex justify-center group overflow-hidden ${
-        showNavbar ? "my-2" : "my-0"
-      }`}
-    >
-      <a className="text-lg hover:text-highlight " href="#">
+    <div className={`navlinks group ${showNavbar ? "my-2" : "my-0"}`}>
+      <a className="text-lg hover:text-highlight" href="#">
         {title}
       </a>
       <LinkDesign showNavbar={showNavbar} />
@@ -44,14 +38,23 @@ const NavLinks = ({ title, showNavbar }) => {
 const index = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      return;
+    } else {
+      setShowNavbar(true);
+    }
+  }, [showNavbar]);
+
   return (
-    <div>
-      <div className="flex flex-row justify-between items-center sticky top-0 w-full h-20 z-50 bg-tertiary">
+    <>
+      <div className="navbar-container">
         <img
-          className="mx-4 w-4/6 md:h-2/3 lg:w-1/3"
+          className="navbar-logo"
           src="https://cdn.discordapp.com/attachments/753151975570276352/904779972890202183/logo.png"
           alt="logo"
         />
+        {/* Navbar toggle for mobile */}
         <div
           className="lg:hidden text-main mx-6 p-2 cursor-pointer group"
           onClick={() => setShowNavbar(!showNavbar)}
@@ -64,7 +67,7 @@ const index = () => {
         </div>
 
         {/* Normal Navbar for desktop */}
-        <div className="text-main hidden lg:flex w-2/6 justify-around">
+        <div className="navbar-wrapper-pc">
           {navbarArr.map((item, id) => (
             <NavLinks title={item.title} showNavbar={showNavbar} key={id} />
           ))}
@@ -73,15 +76,15 @@ const index = () => {
 
       {/* Hamburger Navbar for mobile and tab */}
       {showNavbar ? (
-        <div className="h-full transition-all duration-500 py-1 w-full bg-tertiary text-main flex flex-col items-center ">
+        <div className="navbar-wrapper-phone">
           {navbarArr.map((item, id) => (
             <NavLinks title={item.title} showNavbar={showNavbar} key={id} />
           ))}
         </div>
       ) : (
-        <div className="h-0 w-full transition-all  bg-tertiary hidden"></div>
+        <div className="hidden-navbar-phone"></div>
       )}
-    </div>
+    </>
   );
 };
 
