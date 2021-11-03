@@ -4,6 +4,8 @@ import { TiSocialYoutube } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
 
+import "./Footer.css";
+
 const LinksArr1 = [
   {
     title: "Contanct Us",
@@ -59,36 +61,23 @@ const socialLinksArr = [
 
 const Footer = () => {
   return (
-    <div className="h-full lg:h-96 pt-8 lg:pt-0 text-main bg-background flex flex-col items-center justify-between">
-      <div className="w-full h-full flex flex-wrap lg:flex-nowrap text-center lg:text-left lg:items-center justify-center lg:justify-evenly">
-        <div className="w-5/12 lg:w-auto m-4 lg:m-0">
+    <div className="footer-section">
+      <div className="footer-container">
+        <div className="footer-links">
           {LinksArr1.map((data, idx) => (
-            <p
-              key={idx}
-              className="text-lg lg:text-xl !leading-10 cursor-pointer hover:text-highlight"
-            >
-              {data.title}
-            </p>
+            <p key={idx}>{data.title}</p>
           ))}
         </div>
 
-        <div className="w-5/12 lg:w-auto m-4 lg:m-0">
+        <div className="footer-links">
           {LinksArr2.map((data, idx) => (
-            <p
-              key={idx}
-              className="text-lg lg:text-xl !leading-10 cursor-pointer hover:text-highlight"
-            >
-              {data.title}
-            </p>
+            <p key={idx}>{data.title}</p>
           ))}
         </div>
 
-        <div className="w-5/12 lg:w-auto m-4 lg:m-0">
+        <div className="footer-links">
           {socialLinksArr.map((data, idx) => (
-            <p
-              key={idx}
-              className="text-lg lg:text-xl !leading-10 flex items-center cursor-pointer hover:text-highlight"
-            >
+            <p key={idx} className="flex items-center">
               {data.icon}
               {data.title}
             </p>
@@ -96,7 +85,7 @@ const Footer = () => {
         </div>
 
         {/* Address */}
-        <p className="w-6/12 lg:w-auto m-4 text-lg leading-loose">
+        <p className="footer-address">
           Shri Shankracharya Technical Campus,
           <br />
           Junwani, Bhilai, C.G.
@@ -106,12 +95,8 @@ const Footer = () => {
       <div className="text-center my-4">
         <h1>@2021 Vinitpal</h1>
         <span>
-          <a className="mx-3 cursor-pointer hover:text-highlight text-paragraph">
-            Privacy Policy
-          </a>
-          <a className="mx-3 cursor-pointer hover:text-highlight text-paragraph">
-            Copyright
-          </a>
+          <a className="footer-copyright">Privacy Policy</a>
+          <a className="footer-copyright">Copyright</a>
         </span>
       </div>
     </div>

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .cta-section {
+    @apply w-full h-screen relative;
+  }
+
+  .cta-section .bg-overlay {
+    @apply absolute inset-0 w-full h-full bg-gray-400 bg-opacity-70 lg:bg-opacity-50;
+  }
+
+  .cta-section .text-container {
+    @apply w-full lg:w-auto text-center leading-loose absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .cta-section .text-container h3 {
+    @apply text-xl lg:text-2xl text-gray-900;
+  }
+
+  .cta-section .text-container h1 {
+    @apply text-3xl lg:text-4xl font-semibold;
+  }
+
+  .cta-section .text-container .btn {
+    @apply mt-10 mx-4 py-2 lg:py-2.5 px-6 lg:px-8 transition duration-300 text-lg lg:text-xl outline-none text-main rounded-xl shadow-md;
+  }
+}
+
+@tailwind utilities;

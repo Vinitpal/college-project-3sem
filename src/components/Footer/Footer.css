@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .footer-section {
+    @apply h-full lg:h-96 pt-8 lg:pt-0 text-main bg-background flex flex-col items-center justify-between;
+  }
+
+  .footer-container {
+    @apply w-full h-full flex flex-wrap lg:flex-nowrap text-center lg:text-left lg:items-center justify-center lg:justify-evenly;
+  }
+
+  .footer-links {
+    @apply w-5/12 lg:w-auto m-4 lg:m-0;
+  }
+
+  .footer-links p {
+    @apply text-lg lg:text-xl !leading-10 cursor-pointer hover:text-highlight;
+  }
+
+  .footer-address {
+    @apply w-6/12 lg:w-auto m-4 text-lg leading-loose;
+  }
+
+  .footer-copyright {
+    @apply mx-3 cursor-pointer hover:text-highlight text-paragraph;
+  }
+}
+
+@tailwind utilities;
