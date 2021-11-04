@@ -5,8 +5,8 @@ const TestimonyCard = () => {
     <div className="testimony-card">
       <FaQuoteLeft className="text-2xl my-4 text-gray-500" />
       <p className="text-gray-700 ">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ab, atque
-        omnis nisi dolorem accusamus!
+        I really enjoy my time here at college! I got to meet a lot of amazing
+        peoples and along with many oppurtunities.
       </p>
       <div className="testimony-user">
         <img
