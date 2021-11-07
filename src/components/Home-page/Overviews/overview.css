@@ -27,7 +27,7 @@
   }
 
   .overview-section {
-    @apply h-full lg:h-screen flex flex-col lg:flex-row justify-around items-center py-10 lg:py-4 my-10 mb-4 border-b-2;
+    @apply h-full lg:h-screen flex flex-col lg:flex-row justify-around items-center py-10 lg:py-6 my-10 mb-4 border-b-2 border-gray-200;
   }
 
   .overview-card {
